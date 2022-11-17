@@ -1,0 +1,135 @@
+﻿@model IEnumerable<Login.Models.Candidate>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CandidateName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CandidateEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CandidateMobileNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CandidateLocation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CandidateImg)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CandidateGender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CandidateDateOfBirth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SSC_Marks)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SSC_School)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HSC_Marks)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HSC_College)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UG_Marks)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UG_College)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Skill_1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Skill_2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Skill_3)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CandidateName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CandidateEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CandidateMobileNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CandidateLocation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CandidateImg)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CandidateGender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CandidateDateOfBirth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SSC_Marks)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SSC_School)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HSC_Marks)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HSC_College)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UG_Marks)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UG_College)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Skill_1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Skill_2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Skill_3)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CandidateID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CandidateID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CandidateID })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,162 @@
+﻿@model Login.Models.Candidate
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Candidate</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CandidateName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CandidateName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CandidateEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CandidateEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CandidateMobileNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CandidateMobileNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CandidateLocation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CandidateLocation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CandidateImg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CandidateImg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CandidateGender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CandidateGender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CandidateDateOfBirth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CandidateDateOfBirth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SSC_Marks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SSC_Marks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SSC_School)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SSC_School)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HSC_Marks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HSC_Marks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HSC_College)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HSC_College)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UG_Marks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UG_Marks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UG_College)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UG_College)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Skill_1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Skill_1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Skill_2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Skill_2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Skill_3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Skill_3)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CandidateID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
